@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#line-charts" class="md-skip">
           Skip to content
         </a>
       
@@ -287,8 +287,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#line-charts" class="md-nav__link">
+    Line charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#column-charts" class="md-nav__link">
+    Column charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composed-charts" class="md-nav__link">
+    Composed charts
   </a>
   
 </li>
@@ -465,8 +479,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#line-charts" class="md-nav__link">
+    Line charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#column-charts" class="md-nav__link">
+    Column charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composed-charts" class="md-nav__link">
+    Composed charts
   </a>
   
 </li>
@@ -505,24 +533,20 @@
 
   <h1>Chart types</h1>
 
-<p>Chart types define how data is presented on a chart.</p>
-<h2 id="overview">Overview</h2>
-<p>Vico offers three chart types:</p>
-<ul>
-<li>
-<p><em>Line charts</em> display data as a continuous line (or multiple lines).</p>
-<p><img alt="image" src="../../images/line-chart.png" /></p>
-</li>
-<li>
-<p><em>Column charts</em> display data in the form of columns. It is possible to display multiple columns per chart segment, in which case they can be grouped (displayed next to each other) or stacked (placed on top of one another).  </p>
-<p><img alt="image" src="../../images/column-chart.png" /></p>
-</li>
-<li>
-<p><em>Composed charts</em> comprise two or more charts. The charts can be of the same type or of different types. The charts in a composed chart can be independently scaled, which can be configured via the <code>targetVerticalAxisPosition</code> parameter of <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/"><code>LineChart</code></a> and <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.column/-column-chart/"><code>ColumnChart</code></a>.</p>
-<p><img alt="Group 14" src="../../images/composed-chart.png" /></p>
-</li>
-</ul>
-<p>All chart types offer customization options, which are described later on in this wiki. You can create your own chart types by extending <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart/-base-chart/?query=abstract%20class%20BaseChart%3Cin%20Model%20:%20ChartEntryModel%3E%20:%20Chart%3CModel%3E%20,%20BoundsAware"><code>BaseChart</code></a> or <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart/-chart/"><code>Chart</code></a>.</p>
+<p>Chart types define how data is presented on a chart. All chart types offer customization options, which are described later on in this wiki.
+You can create your own chart types by extending <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart/-base-chart/?query=abstract%20class%20BaseChart%3Cin%20Model%20:%20ChartEntryModel%3E%20:%20Chart%3CModel%3E%20,%20BoundsAware"><code>BaseChart</code></a> or <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart/-chart/"><code>Chart</code></a>.
+Note that the way data is represented on a chart depends on the chart type, but the chart type doesn’t control elements such as markers and axes.</p>
+<h2 id="line-charts">Line charts</h2>
+<p>Line charts display data as a continuous line or, in the case of <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s
+containing multiple datasets, multiple lines. Each line in a line chart can be individually customized (see <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/-line-spec/"><code>LineSpec</code></a>).</p>
+<p><img alt="" src="../../images/line-chart.png" /></p>
+<h2 id="column-charts">Column charts</h2>
+<p>Column charts display data in the form of columns. For <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s
+containing multiple datasets, multiple columns are displayed per chart segment, in which case they can be grouped (displayed next to each other) or stacked (placed on top of one another).</p>
+<p><img alt="" src="../../images/column-chart.png" /></p>
+<h2 id="composed-charts">Composed charts</h2>
+<p>Composed charts comprise any number of charts. These can be of different types. The charts in a composed chart can be independently scaled, which can be configured via <code>targetVerticalAxisPosition</code> parameter of <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/"><code>LineChart</code></a> and <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.column/-column-chart/"><code>ColumnChart</code></a>.</p>
+<p><img alt="" src="../../images/composed-chart.png" /></p>
 <h2 id="setting-the-type-of-a-chart">Setting the type of a chart</h2>
 <p>You can set the type of a chart as follows:</p>
 <ul>
