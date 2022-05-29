@@ -18,6 +18,7 @@ com.patrykandpatryk.vico.compose.dimensions
 com.patrykandpatryk.vico.compose.extension
 com.patrykandpatryk.vico.compose.gesture
 com.patrykandpatryk.vico.compose.layout
+com.patrykandpatryk.vico.compose.legend
 com.patrykandpatryk.vico.compose.style
 module:compose-m2
 com.patrykandpatryk.vico.compose.m2.style
@@ -55,7 +56,9 @@ com.patrykandpatryk.vico.core.entry
 com.patrykandpatryk.vico.core.entry.composed
 com.patrykandpatryk.vico.core.entry.diff
 com.patrykandpatryk.vico.core.extension
+com.patrykandpatryk.vico.core.formatter
 com.patrykandpatryk.vico.core.layout
+com.patrykandpatryk.vico.core.legend
 com.patrykandpatryk.vico.core.marker
 com.patrykandpatryk.vico.core.model
 com.patrykandpatryk.vico.core.scroll
