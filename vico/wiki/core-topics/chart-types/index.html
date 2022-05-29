@@ -358,6 +358,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legends/" class="md-nav__link">
+        Legends
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../value-formatters/" class="md-nav__link">
+        Value formatters
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -538,11 +566,13 @@ You can create your own chart types by extending <a href="https://patrykandpatry
 Note that the way data is represented on a chart depends on the chart type, but the chart type doesn’t control elements such as markers and axes.</p>
 <h2 id="line-charts">Line charts</h2>
 <p>Line charts display data as a continuous line or, in the case of <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s
-containing multiple datasets, multiple lines. Each line in a line chart can be individually customized (see <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/-line-spec/"><code>LineSpec</code></a>).</p>
+containing multiple datasets, multiple lines. Each line in a line chart can be individually customized (see <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/-line-spec/"><code>LineSpec</code></a>).
+Line charts also support data labels, which are displayed for each key point on the line (that is, for each y-axis value defined in the line’s corresponding dataset).</p>
 <p><img alt="" src="../../images/line-chart.png" /></p>
 <h2 id="column-charts">Column charts</h2>
 <p>Column charts display data in the form of columns. For <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s
-containing multiple datasets, multiple columns are displayed per chart segment, in which case they can be grouped (displayed next to each other) or stacked (placed on top of one another).</p>
+containing multiple datasets, multiple columns are displayed per chart segment, in which case they can be grouped (displayed next to each other) or stacked (placed on top of one another).
+Like line charts, column charts support data labels. These are displayed near the top edge of each column.</p>
 <p><img alt="" src="../../images/column-chart.png" /></p>
 <h2 id="composed-charts">Composed charts</h2>
 <p>Composed charts comprise any number of charts. These can be of different types. The charts in a composed chart can be independently scaled, which can be configured via <code>targetVerticalAxisPosition</code> parameter of <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.line/-line-chart/"><code>LineChart</code></a> and <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.column/-column-chart/"><code>ColumnChart</code></a>.</p>

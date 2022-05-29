@@ -13,7 +13,7 @@
     
     
       
-        <title>Customization in Jetpack Compose - Vico</title>
+        <title>Legends - Vico</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customization-in-jetpack-compose" class="md-skip">
+        <a href="#adding-a-legend-to-a-chart" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Customization in Jetpack Compose
+              Legends
             
           </span>
         </div>
@@ -213,12 +213,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -241,7 +243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-topics/chart-axes/" class="md-nav__link">
+      <a href="../chart-axes/" class="md-nav__link">
         Chart axes
       </a>
     </li>
@@ -255,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-topics/chart-types/" class="md-nav__link">
+      <a href="../chart-types/" class="md-nav__link">
         Chart types
       </a>
     </li>
@@ -269,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-topics/decorations-and-markers/" class="md-nav__link">
+      <a href="../decorations-and-markers/" class="md-nav__link">
         Decorations and markers
       </a>
     </li>
@@ -283,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-topics/handling-chart-data/" class="md-nav__link">
+      <a href="../handling-chart-data/" class="md-nav__link">
         Handling chart data
       </a>
     </li>
@@ -295,11 +297,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../core-topics/legends/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Legends
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Legends
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-legend-to-a-chart" class="md-nav__link">
+    Adding a legend to a chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verticallegend" class="md-nav__link">
+    VerticalLegend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -311,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-topics/value-formatters/" class="md-nav__link">
+      <a href="../value-formatters/" class="md-nav__link">
         Value formatters
       </a>
     </li>
@@ -331,14 +384,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -361,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../components/" class="md-nav__link">
+      <a href="../../customization/components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -373,66 +424,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Customization in Jetpack Compose
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../customization/customization-in-jetpack-compose/" class="md-nav__link">
         Customization in Jetpack Compose
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#providechartstyle" class="md-nav__link">
-    ProvideChartStyle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#m2chartstyle-m3chartstyle" class="md-nav__link">
-    m2ChartStyle &amp; m3ChartStyle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chartstyle" class="md-nav__link">
-    ChartStyle
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -444,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../customization-in-the-view-system/" class="md-nav__link">
+      <a href="../../customization/customization-in-the-view-system/" class="md-nav__link">
         Customization in the view system
       </a>
     </li>
@@ -458,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shapes/" class="md-nav__link">
+      <a href="../../customization/shapes/" class="md-nav__link">
         Shapes
       </a>
     </li>
@@ -489,8 +485,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -499,22 +493,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#providechartstyle" class="md-nav__link">
-    ProvideChartStyle
+  <a href="#adding-a-legend-to-a-chart" class="md-nav__link">
+    Adding a legend to a chart
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#m2chartstyle-m3chartstyle" class="md-nav__link">
-    m2ChartStyle &amp; m3ChartStyle
+  <a href="#verticallegend" class="md-nav__link">
+    VerticalLegend
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chartstyle" class="md-nav__link">
-    ChartStyle
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -531,61 +525,31 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/patrykandpatryk/vico/edit/master/wiki/customization/customization-in-jetpack-compose.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/patrykandpatryk/vico/edit/master/wiki/core-topics/legends.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="customization-in-jetpack-compose">Customization in Jetpack Compose</h1>
-<p>Vico allows for each chart to be customized individually. For example, the <code>lineChart</code> function has
-parameters for the line thickness, the line color, and so on. However, we recommend you create a common
-chart style and override it if needed. You can do this as described below.</p>
-<h2 id="providechartstyle"><code>ProvideChartStyle</code></h2>
-<p><code>ProvideChartStyle</code> is similar to <code>MaterialTheme</code> from <code>compose.material</code> and <code>compose.material3</code>. It can be used as follows. To access
-the provided value, use <code>currentChartStyle</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ProvideChartStyle(chartStyle = ChartStyle(...)) {
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   ...
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>}
-</code></pre></div>
-<p>Functions such as <code>lineChart</code> use the values provided via <code>ProvideChartStyle</code> as the defaults for their parameters.
-For example, the default value for the <code>lines</code> parameter of <code>lineChart</code> is <code>currentChartStyle.lineChart.lines</code>.</p>
-<h2 id="m2chartstyle-m3chartstyle"><code>m2ChartStyle</code> &amp; <code>m3ChartStyle</code></h2>
-<p>If you use <code>compose.material</code> or <code>compose.material3</code> in your app, you can use the <code>m2ChartStyle</code>
-(<code>compose-m2</code> artifact) or <code>m3ChartStyle</code> (<code>compose-m3</code> artifact) function to create a baseline <code>ChartStyle</code>
-implementation that uses the colors from your app’s Material Theme:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ProvideChartStyle(chartStyle = m3ChartStyle()) {
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    ...
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
-</code></pre></div>
-<h2 id="chartstyle"><code>ChartStyle</code></h2>
-<p>A <code>ChartStyle</code> instance comprises these fields:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>axis</code></td>
-<td>The appearance of chart axes (a <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.style/-chart-style/-axis/"><code>ChartStyle.Axis</code></a> instance).</td>
-</tr>
-<tr>
-<td><code>columnChart</code></td>
-<td>The appearance of column charts (a <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.style/-chart-style/-column-chart/"><code>ChartStyle.ColumnChart</code></a> instance).</td>
-</tr>
-<tr>
-<td><code>lineChart</code></td>
-<td>The appearance of line charts (a <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.style/-chart-style/-line-chart/"><code>ChartStyle.LineChart</code></a> instance).</td>
-</tr>
-<tr>
-<td><code>marker</code></td>
-<td>The appearance of chart markers (a <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.style/-chart-style/-marker/"><code>ChartStyle.Marker</code></a> instance).</td>
-</tr>
-</tbody>
-</table>
+  <h1>Legends</h1>
+
+<p>A <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-legend/"><code>Legend</code></a> describes the elements present on a chart.</p>
+<h2 id="adding-a-legend-to-a-chart">Adding a legend to a chart</h2>
+<p>Here’s how to add a <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-legend/"><code>Legend</code></a> to a chart:</p>
+<ul>
+<li>In Jetpack Compose, use the <code>legend</code> parameter of the <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.chart/-chart"><code>Chart</code></a> composable function.</li>
+<li>In the view system, use the <code>legend</code> field of <a href="https://patrykandpatryk.com/vico/api/vico/view/com.patrykandpatryk.vico.view.chart/-base-chart-view/"><code>BaseChartView</code></a> (which is extended by <a href="https://patrykandpatryk.com/vico/api/vico/view/com.patrykandpatryk.vico.view.chart/-chart-view/"><code>ChartView</code></a> and <a href="https://patrykandpatryk.com/vico/api/vico/view/com.patrykandpatryk.vico.view.chart/-composed-chart-view/"><code>ComposedChartView</code></a>).</li>
+</ul>
+<h2 id="verticallegend"><a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-vertical-legend/"><code>VerticalLegend</code></a></h2>
+<p>Vico includes one <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-legend/"><code>Legend</code></a>
+implementation: <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-vertical-legend/"><code>VerticalLegend</code></a>,
+which displays its items in a vertical list. Each item of a <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-vertical-legend/"><code>VerticalLegend</code></a>
+comprises an icon and a label. <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-vertical-legend/"><code>VerticalLegend</code></a> offers
+multiple customization options (see the API reference). If using Jetpack Compose, you can create a <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.legend/-vertical-legend/"><code>VerticalLegend</code></a>
+via the <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.legend/vertical-legend"><code>verticalLegend</code></a> composable function.</p>
+<h2 id="examples">Examples</h2>
+<p>See <a href="https://github.com/patrykandpatryk/vico/tree/master/sample">the sample app</a> for examples in both Jetpack Compose and the view system.
+In particular, see <a href="https://github.com/patrykandpatryk/vico/blob/master/sample/src/main/java/com/patrykandpatryk/vico/sample/chart/LineChartWithLabelsInside.kt"><code>LineChartWithLabelsInside.kt</code></a>.</p>
 
               
             </article>
@@ -599,7 +563,7 @@ implementation that uses the colors from your app’s Material Theme:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../components/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Components" rel="prev">
+        <a href="../handling-chart-data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Handling chart data" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -608,20 +572,20 @@ implementation that uses the colors from your app’s Material Theme:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Components
+              Handling chart data
             </div>
           </div>
         </a>
       
       
         
-        <a href="../customization-in-the-view-system/" class="md-footer__link md-footer__link--next" aria-label="Next: Customization in the view system" rel="next">
+        <a href="../value-formatters/" class="md-footer__link md-footer__link--next" aria-label="Next: Value formatters" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Customization in the view system
+              Value formatters
             </div>
           </div>
           <div class="md-footer__button md-icon">
