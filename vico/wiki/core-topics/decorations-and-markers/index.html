@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/vico.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -610,6 +610,11 @@
 <li>In Jetpack Compose, use the <code>marker</code> parameter of the <code>Chart</code> composable to add a marker displayed when a chart is touched, and use the <code>persistentMarkers</code> parameter of <code>columnChart</code> and <code>lineChart</code> to add persistent markers.</li>
 <li>In the view system, use use the <code>marker</code> field of <code>BaseChartView</code> to add a marker displayed when a chart is touched, and use the <code>addPersistentMarker</code>, <code>setPersistentMarkers</code>, and <code>removePersistentMarker</code> functions to add and remove persistent markers. These functions are accessible via the <code>chart</code> field of <code>BaseChartView</code> (which is extended by <code>ChartView</code> and <code>ComposedChartView</code>).</li>
 </ul>
+<p>To listen to marker visibility changes, use <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.component.marker/-marker-visibility-change-listener/"><code>MarkerVisibilityChangeListener</code></a>:</p>
+<ul>
+<li>In Jetpack Compose, use the <code>markerVisibilityChangeListener</code> parameter of the <a href="https://patrykandpatryk.com/vico/api/vico/compose/com.patrykandpatryk.vico.compose.chart/-chart"><code>Chart</code></a> composable.</li>
+<li>In the view system, use the <code>markerVisibilityChangeListener</code> field of <a href="https://patrykandpatryk.com/vico/api/vico/view/com.patrykandpatryk.vico.view.chart/-base-chart-view/"><code>BaseChartView</code></a>.</li>
+</ul>
 <p>Below is an example of how a marker can be created. Also see <a href="https://github.com/patrykandpatryk/vico/blob/master/sample/src/main/java/com/patrykandpatryk/vico/sample/component/Marker.kt#L38"><code>getMarker</code> in the sample app</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">labelBackgroundShape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MarkerCorneredShape</span><span class="p">(</span><span class="n">all</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Corner</span><span class="p">.</span><span class="na">FullyRounded</span><span class="p">)</span><span class="w"></span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
@@ -725,10 +730,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
       
     
   </body>
