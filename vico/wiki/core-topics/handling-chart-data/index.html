@@ -272,6 +272,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../custom-data-types/" class="md-nav__link">
+        Custom data types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../decorations-and-markers/" class="md-nav__link">
         Decorations and markers
       </a>
@@ -534,7 +548,7 @@
 
   <h1>Handling chart data</h1>
 
-<p>Chart data in Vico is stored in <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s.</p>
+<p>Chart data in Vico is stored in <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry-model/"><code>ChartEntryModel</code></a>s. A <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/-chart-entry"><code>ChartEntry</code></a> holds data about an individual entry on a chart (for example, a single column).</p>
 <h2 id="static-data">Static data</h2>
 <p>For static data (that is, data that remains unchanged), create a <code>ChartEntryModel</code> instance (for simple charts) or a <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.chart.composed/-composed-chart-entry-model/"><code>ComposedChartEntryModel</code></a> instance (for composed charts). <code>ComposedChartEntryModel</code> extends <code>ChartEntryModel</code>. Factory functions are available, including <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry/entry-model-of?query=fun%20entryModelOf(vararg%20entries:%20Pair%3CNumber,%20Number%3E):%20ChartEntryModel"><code>entryModelOf</code></a> and <a href="https://patrykandpatryk.com/vico/api/vico/core/com.patrykandpatryk.vico.core.entry.composed/-composed-chart-entry-model-producer/-companion/composed-chart-entry-model-of"><code>composedChartEntryModelOf</code></a>. You can apply a <code>ChartEntryModel</code> or <code>ComposedChartEntryModel</code> to a chart as follows:</p>
 <ul>
